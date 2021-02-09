@@ -124,7 +124,7 @@ int main()
 		robot.rotate_right();
 	}
 
-	// Diff: 9(N - 1) + 1, ~9N (linear)
+	// Diff: O(N), linear.
 
 	print(ar);
 }
