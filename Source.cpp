@@ -14,9 +14,15 @@ void print(vector <vector <char>>& ar)
 }
 
 struct Robot {
-	int x = 0;
-	int y = 0;
-	string dir = "Up";
+	int x;
+	int y;
+	string dir;
+
+	Robot(int x_, int y_, string dir_) {
+		x = x_;
+		y = y_;
+		dir = dir_;
+	}
 
 	void move_forward()
 	{
@@ -73,7 +79,7 @@ int main()
 	if (n < 1) return 0;
 	vector <vector <char>> ar(n, vector <char> (n, '.'));
 
-	Robot robot;
+	Robot robot(0, 0, "Up");
 	// Robot looks at direction: up
 
 	// paint
