@@ -80,7 +80,7 @@ int main()
 	vector <vector <char>> ar(n, vector <char> (n, '.'));
 
 	Robot robot(0, 0, "Up");
-	// Robot looks at direction: up
+	// Robot looking at direction: up
 
 	// paint
 	ar[robot.x][robot.y] = '#';
@@ -100,7 +100,7 @@ int main()
 		ar[robot.x][robot.y] = '#';
 	}
 
-	// rotate left (current direction: up)
+	// + rotate left (current direction: up)
 	robot.rotate_left();
 	for (int i = n - 1; i > 0; i--) {
 		// + move forward
@@ -109,7 +109,7 @@ int main()
 
 	// paint
 	ar[robot.x][robot.y] = '#';
-	// rotate left (current direcion: left)
+	// + rotate left (current direcion: left)
 	robot.rotate_left();
 	for (int i = 1; i < n; i++) {
 		// + move forward
